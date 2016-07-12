@@ -3,9 +3,10 @@ This is comments of main package
 */
 package main
 
+import "fmt"
+
 import (
-	"fmt"
-	"mapPackage"
+	"funcPackage"
 )
 
 //import fmt "fmt" // Package implementing formatted I/O.
@@ -55,7 +56,15 @@ func main() {
 	//rangePackage.RangAppendSlice()
 	//rangePackage.RangAppendSlice2()
 
-	mapPackage.MapInit()
+	//mapPackage.MapInit()
+	//mapPackage.LoopKeyValue()
+	//var value = mapPackage.GetItem("Google")
+	//fmt.Println(value)
+
+	//funcPackage.FuncDefine()
+	//funcPackage.FuncDefine2()
+	//funcPackage.Closure()
+	funcPackage.Closure2()
 
 	fmt.Println("The code of Leanr end.")
 }

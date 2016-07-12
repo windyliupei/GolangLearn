@@ -23,6 +23,52 @@ func MapInit() {
 	fmt.Println(m["Bell Labs"])
 }
 
-func MapInit2() {
+func LoopKeyValue() {
+
+	var m = map[string]Vertex{
+		"Bell Labs": Vertex{1, 2},
+		"Google":    Vertex{},
+	}
+
+	//fmt.Println(m)
+
+	//loop values of map
+	for _, value := range m {
+		fmt.Println(value)
+	}
+
+	for key, value := range m {
+		fmt.Println(key, value)
+	}
+
+	for key, _ := range m {
+		fmt.Println(key)
+	}
+
+}
+
+func DeleteItemFromMap() {
+	var m = map[string]Vertex{
+		"Bell Labs": Vertex{1, 2},
+		"Google":    Vertex{},
+	}
+
+	delete(m, "Google")
+
+	fmt.Println(m)
+
+}
+
+func GetItem(key string) Vertex {
+	var m = map[string]Vertex{
+		"Bell Labs": Vertex{1, 2},
+		"Google":    Vertex{9, 9},
+	}
+
+	if value, ok := m[key]; ok {
+		return value
+	}
+
+	return Vertex{0, 0}
 
 }

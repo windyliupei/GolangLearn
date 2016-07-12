@@ -23,5 +23,4 @@ func RangAppendSlice2() {
 		fmt.Printf("%d\n", value)
 	}
 
-	fmt.Printf("d%\n", 1<<3)
 }
