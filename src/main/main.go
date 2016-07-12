@@ -1,12 +1,17 @@
+/*
+This is comments of main package
+*/
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"mapPackage"
+)
 
 //import fmt "fmt" // Package implementing formatted I/O.
 //import mat "math" //倒入包，并以'mat'的名称使用这个包
 
 //倒入包方式2
-
 //import math "math"
 
 func main() {
@@ -46,6 +51,11 @@ func main() {
 	//slicePackage.SliceFuncCut()
 	//slicePackage.Slicenil()
 	//slicePackage.AppendSlice()
+
+	//rangePackage.RangAppendSlice()
+	//rangePackage.RangAppendSlice2()
+
+	mapPackage.MapInit()
 
 	fmt.Println("The code of Leanr end.")
 }
