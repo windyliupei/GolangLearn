@@ -60,9 +60,10 @@ func fibonacci() func(int) int {
 			return 1
 		} else {
 			curr = prev2 + prev1
-			prev1 = curr
 			prev2 = prev1
-			return prev2 + prev1
+			prev1 = curr
+
+			return curr
 		}
 
 	}
